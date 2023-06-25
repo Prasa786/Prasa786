@@ -133,7 +133,7 @@ class Thovex(Car, EngineMixin, BatteryMixin):
 class TestCalliope(unittest.TestCase):
     def test_battery_should_be_serviced(self):
         today = datetime.today().date()
-        last_service_date = today - timedelta(days=365 * 3)
+        last_service_date = today - timedelta(days=365 * 2)
         current_mileage = 0
         last_service_mileage = 0
 
@@ -169,7 +169,7 @@ class TestCalliope(unittest.TestCase):
 class TestGlissade(unittest.TestCase):
     def test_battery_should_be_serviced(self):
         today = datetime.today().date()
-        last_service_date = today - timedelta(days=365 * 3)
+        last_service_date = today - timedelta(days=365 * 33)
         current_mileage = 0
         last_service_mileage = 0
 
